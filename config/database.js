@@ -3,8 +3,7 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-const dbUri = `mysql://${process.env.MYSQLUSER}:${process.env.MYSQLPASSWORD}@${process.env.MYSQLHOST}:${process.env.MYSQLPORT}/${process.env.MYSQLDATABASE}`
-const db = mysql.createConnection(dbUri);
+const db = mysql.createConnection('mysql://root:LBAoiboMZZBFMmCxAIcQIonRQCRBoszr@junction.proxy.rlwy.net:52620/railway');
 
 
 db.connect((err) => {
